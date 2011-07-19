@@ -1,6 +1,8 @@
 <?php
 namespace oc\ext\sns ;
 
+use oc\ext\coreuser\Login;
+
 use oc\base\FrontFrame;
 
 use jc\session\Session;
@@ -31,6 +33,7 @@ class Index extends Controller
 	protected function init()
 	{
 		$this->createView("Index") ;
+		$this->add( new Login() ) ;
 	}
 	
 	public function process()
