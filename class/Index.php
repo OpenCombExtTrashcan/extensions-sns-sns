@@ -1,8 +1,6 @@
 <?php
 namespace oc\ext\sns ;
 
-use oc\ext\coreuser\Login;
-
 use oc\base\FrontFrame;
 
 use jc\session\Session;
@@ -41,7 +39,7 @@ class Index extends Controller
 	
 	public function process()
 	{
-		$this->add( new Login() ) ;
+		
 	}
 }
 

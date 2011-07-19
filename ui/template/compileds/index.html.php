@@ -8,13 +8,6 @@
               </div>
               <div class="clear"></div>
 			</div>
-			
-			<?php ob_flush() ;
-$theView = $aVariables->get('theView') ;
-foreach($theView->iterator() as $aChildView){
-	$theView->outputStream()->write($aChildView->outputStream()) ;
-}?>
-			
             <div class="logined_btn">
                 <input type="button" value="管理中心" class="btn_login" />
 				<input type="button" value="退　出" class="btn_register" />
